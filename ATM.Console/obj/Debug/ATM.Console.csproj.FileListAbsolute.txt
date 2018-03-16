@@ -1,0 +1,14 @@
+C:\CokerGit\ATM\ATM.Console\bin\Debug\ATM.Console.exe.config
+C:\CokerGit\ATM\ATM.Console\bin\Debug\ATM.Console.exe
+C:\CokerGit\ATM\ATM.Console\bin\Debug\ATM.Console.pdb
+C:\CokerGit\ATM\ATM.Console\bin\Debug\EntityFramework.dll
+C:\CokerGit\ATM\ATM.Console\bin\Debug\EntityFramework.SqlServer.dll
+C:\CokerGit\ATM\ATM.Console\bin\Debug\EntityFramework.xml
+C:\CokerGit\ATM\ATM.Console\bin\Debug\EntityFramework.SqlServer.xml
+C:\CokerGit\ATM\ATM.Console\obj\Debug\ATM.Console.csprojResolveAssemblyReference.cache
+C:\CokerGit\ATM\ATM.Console\obj\Debug\ATM.Console.csproj.CoreCompileInputs.cache
+C:\CokerGit\ATM\ATM.Console\obj\Debug\ATM.Console.exe
+C:\CokerGit\ATM\ATM.Console\obj\Debug\ATM.Console.pdb
+C:\CokerGit\ATM\ATM.Console\obj\Debug\ATM.Console.Migrations.InitialCreate.resources
+C:\CokerGit\ATM\ATM.Console\obj\Debug\ATM.Console.csproj.GenerateResource.Cache
+C:\CokerGit\ATM\ATM.Console\obj\Debug\ATM.Console.Migrations.AddAccountHolder.resources

@@ -10,7 +10,7 @@ namespace ATM.Console
 {
     public class ATMRepository : IAtm
     {
-        public bool Deposit(decimal amount)
+        public bool Deposit(Account account, decimal amount)
         {
             throw new NotImplementedException();
         }

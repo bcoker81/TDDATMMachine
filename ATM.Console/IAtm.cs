@@ -9,7 +9,7 @@ namespace ATM.Console
 {
     public interface IAtm
     {
-        bool Deposit(decimal amount);
+        bool Deposit(Account account, decimal amount);
         bool Withdraw(decimal amount);
         AccountResponse CheckBalance(string accountNumber);
     }

@@ -12,11 +12,21 @@ namespace ATM.Tests
         public ATMRepository TestObj;
         private static ATMDbContext Db;
 
+        private DateTime accountCreateDate;
+        private string accountHolder;
+        private string accountNumber;
+        private decimal currentBalance;
+
         [SetUp]
         public void Setup()
         {
             TestObj = new ATMRepository();
             Db = new ATMDbContext();
+
+            accountCreateDate = DateTime.Now;
+            accountHolder = Faker.Name.FullName();
+            accountNumber = Faker.Name.First();
+            currentBalance = 456.77m;
         }
 
         [Test]
@@ -52,6 +62,25 @@ namespace ATM.Tests
 
             //assert
             Assert.IsNotEmpty(actual.ErrorCode.ToString());
+        }
+
+        [Test]
+        public void ATMLogic_Deposit_ModifiesBalanceInDatabase()
+        {
+            //arrange
+            Account expected = new Account
+            {
+                AccountCreateDate = accountCreateDate,
+                AccountHolder = accountHolder,
+                AccountNumber = accountNumber,
+                CurrentBalance = currentBalance
+            };
+
+            //act
+            TestObj.Deposit(expected, 220.00m);
+
+            //assert
+            //Assert.That();
         }
     }
 }

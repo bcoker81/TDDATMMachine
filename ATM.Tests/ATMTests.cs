@@ -45,16 +45,13 @@ namespace ATM.Tests
         public void ATMLogic_ChecksBalanceReturnsErrorMessageIfNull()
         {
             //arrange
-            var expected = new Account();
+            string expected = null;
 
             //act
-            var result = Db.Accounts.Add(expected);
-            Db.SaveChanges();
-
-            var actual = TestObj.CheckBalance(expected.AccountNumber);
+            var actual = TestObj.CheckBalance(expected);
 
             //assert
-            Assert.That(expected.CurrentBalance, Is.EqualTo(actual.Account.CurrentBalance));
+            Assert.IsNotEmpty(actual.ErrorCode.ToString());
         }
     }
 }

@@ -28,6 +28,10 @@ namespace ATM.Console
                        return response; 
                     }
                 }
+                response.ErrorCode = 100;
+                response.ErrorMessage = "String is null";
+                response.IsSuccess = false;
+                return response;
                 
             }
             catch (Exception)
